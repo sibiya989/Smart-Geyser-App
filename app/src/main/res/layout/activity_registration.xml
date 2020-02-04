@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Registration"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:text="registraion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:textColor="#368DEB"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:id="@+id/txtRegistraion" />
+    <EditText
+        android:id="@+id/txtRegUserName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:hint="Name"
+        android:textColor="#368DEB"
+        android:textSize="20sp"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/txtRegEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:hint="Email"
+        android:textColor="#000"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/txtRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/txtRegPasswordconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:hint="Confirm Passsword"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="20">
+
+        <Button
+            android:id="@+id/btnRegSingIn"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="10"
+            android:background="@drawable/buttonsigninstyle"
+            android:text="login"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRegSignUp"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="10"
+            android:text="Create"
+            android:background="@drawable/buttonsignupstyle"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:background="@drawable/progressbarstyle"
+        android:layout_gravity="center"
+        android:layout_weight="15"
+        android:id="@+id/RegprogressBar" />
+
+
+</LinearLayout>

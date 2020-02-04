@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Chart">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_weight="10"
+        android:gravity="start"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price2"
+        android:layout_weight="10"
+        android:gravity="start"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/power"
+        android:layout_weight="10"
+        android:gravity="start"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/indicator"
+        android:background="@drawable/buttonsigninstyle"
+        android:layout_weight="10"
+        android:gravity="start"/>
+    <EditText
+        android:id="@+id/Birthday"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:inputType="date"
+        android:hint="choose date to compare"/>
+    <Button
+        android:id="@+id/CompareUsage"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compare Usage"
+        android:textColor="#000"
+        android:background="@drawable/buttonsigninstyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp" />
+
+
+
+
+</LinearLayout>

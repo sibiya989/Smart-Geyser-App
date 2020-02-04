@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Registration"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100">
+
+    <TextView
+        android:text="registraion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:textColor="#368DEB"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:id="@+id/txtRegistraion" />
+    <EditText
+        android:id="@+id/txtRegUserName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:hint="name"
+        android:textColor="#368DEB"
+        android:textSize="20sp"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/txtRegEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:hint="email"
+        android:textColor="#368DEB"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/txtRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="15"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#368DEB"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="20">
+
+        <Button
+            android:id="@+id/btnRegSignUp"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="10"
+            android:text="Create"
+            android:textColor="#368DEB"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRegSingIn"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="10"
+            android:text="login"
+            android:textColor="#368DEB"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_weight="5"
+        android:id="@+id/RegprogressBar" />
+
+
+</LinearLayout>
